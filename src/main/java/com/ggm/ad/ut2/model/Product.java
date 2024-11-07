@@ -16,6 +16,15 @@ public class Product {
     // Constructor vacío
 
 
+    public Product(String name, String description, int stock, double price, boolean available) {
+
+        this.name = name;
+        this.description = description;
+        this.stock = stock;
+        this.price = price;
+        this.available = available;
+    }
+
     public Product(int id, String name, String description, int stock, double price, boolean available) {
         this.id = id;
         this.name = name;
@@ -23,6 +32,11 @@ public class Product {
         this.stock = stock;
         this.price = price;
         this.available = available;
+    }
+    public Product() {
+    }
+
+    public Product(int id, String name, String description, int stock, double price, boolean available, LocalDateTime createDate, LocalDateTime updateDate) {
     }
 
     // Getters y Setters
@@ -90,7 +104,7 @@ public class Product {
         this.updateDate = updateDate;
     }
 
-    // Método toString
+
     @Override
     public String toString() {
         return "Producto{" +
