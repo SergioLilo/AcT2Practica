@@ -26,7 +26,10 @@ public class App {
         productService.updateProduct(guitar);
         */
         //productService.deleteProduct(drumSet);
-        productService.getProductById(1);
+        //productService.getProductById(5);
+       // productService.getAllProducts();
+        //productService.substractStock(1,1);
+        productService.getAllByNameAlike("=");
 
 
     }

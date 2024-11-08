@@ -9,6 +9,8 @@ import org.slf4j.LoggerFactory;
 
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProductDaoJdbc implements IProductDao {
     private static final Logger logger = LoggerFactory.getLogger(ProductDaoJdbc.class);
@@ -92,26 +94,94 @@ public class ProductDaoJdbc implements IProductDao {
 
     @Override
     public Product getById(int productId) throws SQLException {
-        String sql = "SELECT ID, NAME, DESCRIPTION, STOCK, PRICE, AVAILABLE, CREATE_DATE, UPDATE_DATE FROM PRODUCT WHERE id = ?";
+        String sql = "SELECT ID, NAME, DESCRIPTION, STOCK, PRICE, AVAILABLE, CREATE_DATE, UPDATE_DATE FROM PRODUCT WHERE ID = ?";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setInt(1, productId);
 
         ResultSet rs = pstmt.executeQuery();
 
         if (rs.next()) {
-            Product product=new Product(
-                    rs.getInt("id"),
-                    rs.getString("name"),
-                    rs.getString("description"),
-                    rs.getInt("stock"),
-                    rs.getDouble("price"),
-                    rs.getBoolean("available"),
-                    rs.getTimestamp("CREATE_DATE").toLocalDateTime(),
-                    rs.getTimestamp("UPDATE_DATE").toLocalDateTime());
+
+            Product product=new Product();
+
+            product.setId(rs.getInt("ID"));
+            product.setName(rs.getString("NAME"));
+            product.setDescription(rs.getString("DESCRIPTION"));
+            product.setStock(rs.getInt("STOCK"));
+            product.setPrice(rs.getDouble("PRICE"));
+            product.setAvailable(rs.getBoolean("AVAILABLE"));
+            product.setCreateDate(rs.getTimestamp("CREATE_DATE").toLocalDateTime());
+            product.setUpdateDate(rs.getTimestamp("UPDATE_DATE").toLocalDateTime());
+
             return product;
 
         } else {
             return null;
         }
     }
-}
+
+    @Override
+    public List<Product> getAll() throws SQLException {
+        String sql = "SELECT ID, NAME, DESCRIPTION, STOCK, PRICE, AVAILABLE, CREATE_DATE, UPDATE_DATE FROM PRODUCT";
+        List<Product> products = new ArrayList<>();
+        PreparedStatement pstmt = conn.prepareStatement(sql);
+        ResultSet rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                Product product = new Product();
+                product.setId(rs.getInt("ID"));
+                product.setName(rs.getString("NAME"));
+                product.setDescription(rs.getString("DESCRIPTION"));
+                product.setStock(rs.getInt("STOCK"));
+                product.setPrice(rs.getDouble("PRICE"));
+                product.setAvailable(rs.getBoolean("AVAILABLE"));
+                product.setCreateDate(rs.getTimestamp("CREATE_DATE").toLocalDateTime());
+                product.setUpdateDate(rs.getTimestamp("UPDATE_DATE").toLocalDateTime());
+
+                products.add(product);
+            }
+
+        return products;
+    }
+
+    @Override
+    public List<Product> getAllByNameAlike(String name) throws SQLException {
+        String sql = "SELECT ID, NAME, DESCRIPTION, STOCK, PRICE, AVAILABLE, CREATE_DATE, UPDATE_DATE FROM PRODUCT WHERE NAME LIKE ?";
+        List<Product> products = new ArrayList<>();
+        PreparedStatement pstmt = conn.prepareStatement(sql);
+        pstmt.setString(1, "%" + name + "%");
+        ResultSet rs = pstmt.executeQuery();
+
+        while (rs.next()) {
+            Product product = new Product();
+            product.setId(rs.getInt("ID"));
+            product.setName(rs.getString("NAME"));
+            product.setDescription(rs.getString("DESCRIPTION"));
+            product.setStock(rs.getInt("STOCK"));
+            product.setPrice(rs.getDouble("PRICE"));
+            product.setAvailable(rs.getBoolean("AVAILABLE"));
+            product.setCreateDate(rs.getTimestamp("CREATE_DATE").toLocalDateTime());
+            product.setUpdateDate(rs.getTimestamp("UPDATE_DATE").toLocalDateTime());
+
+            products.add(product);
+        }
+
+        return products;
+    }
+
+    @Override
+    public boolean substractStock(int productId, int newStock) throws SQLException {
+
+        String sql = "UPDATE PRODUCT SET STOCK = ? WHERE ID = ?";
+
+        PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, newStock);
+            pstmt.setInt(2, productId);
+
+            int rowsAffected = pstmt.executeUpdate();
+
+        return rowsAffected > 0;
+            }
+
+    }
+

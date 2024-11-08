@@ -1,12 +1,125 @@
-2024-11-07 09:56:20 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
-2024-11-07 09:56:20 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching Product with ID: 1
-2024-11-07 09:56:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-11-07 09:56:21 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
-2024-11-07 09:56:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-11-07 09:56:21 [main] INFO  c.ggm.ad.ut2.service.ProductService - Product successfully fetched: Producto{id=0, name='null', description='null', stock=0, price=0.0, available=false, createDate=null, updateDate=null}
-2024-11-07 09:59:00 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
-2024-11-07 09:59:00 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching Product with ID: 1
-2024-11-07 09:59:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-11-07 09:59:00 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
-2024-11-07 09:59:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-11-07 09:59:00 [main] INFO  c.ggm.ad.ut2.service.ProductService - Product successfully fetched: Producto{id=0, name='null', description='null', stock=0, price=0.0, available=false, createDate=null, updateDate=null}
+2024-11-08 12:11:59 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 12:11:59 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching Product with ID: 5
+2024-11-08 12:11:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 12:11:59 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 12:11:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 12:12:54 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 12:12:54 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching Product with ID: 5
+2024-11-08 12:12:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 12:12:54 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 12:12:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 12:12:54 [main] ERROR c.ggm.ad.ut2.service.ProductService - General ERROR 
+java.lang.Exception: null
+	at com.ggm.ad.ut2.service.ProductService.getProductById(ProductService.java:114)
+	at com.ggm.ad.ut2.App.main(App.java:29)
+2024-11-08 12:13:51 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 12:13:51 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching Product with ID: 5
+2024-11-08 12:13:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 12:13:51 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 12:13:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 12:15:06 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 12:15:06 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching Product with ID: 5
+2024-11-08 12:15:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 12:15:06 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 12:15:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 12:15:06 [main] ERROR c.ggm.ad.ut2.service.ProductService - General ERROR 
+com.ggm.ad.ut2.exceptions.GeneralErrorException: D
+	at com.ggm.ad.ut2.service.ProductService.getProductById(ProductService.java:114)
+	at com.ggm.ad.ut2.App.main(App.java:29)
+2024-11-08 12:16:10 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 12:16:10 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching Product with ID: 5
+2024-11-08 12:16:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 12:16:10 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 12:16:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 12:16:10 [main] ERROR c.ggm.ad.ut2.service.ProductService - General ERROR 
+com.ggm.ad.ut2.exceptions.GeneralErrorException: Product Doesn't exist
+	at com.ggm.ad.ut2.service.ProductService.getProductById(ProductService.java:114)
+	at com.ggm.ad.ut2.App.main(App.java:29)
+2024-11-08 12:16:46 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 12:16:46 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching Product with ID: 5
+2024-11-08 12:16:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 12:16:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 12:16:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 12:16:46 [main] ERROR c.ggm.ad.ut2.service.ProductService - There has been an error while operating with the DB
+java.sql.SQLException: Product Doesn't exist
+	at com.ggm.ad.ut2.service.ProductService.getProductById(ProductService.java:114)
+	at com.ggm.ad.ut2.App.main(App.java:29)
+2024-11-08 12:22:06 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 12:22:06 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching Product with ID: 5
+2024-11-08 12:22:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 12:22:07 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 12:22:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 12:22:07 [main] ERROR c.ggm.ad.ut2.service.ProductService - There has been an error while operating with the DB
+java.sql.SQLException: Product Doesn't exist
+	at com.ggm.ad.ut2.service.ProductService.getProductById(ProductService.java:114)
+	at com.ggm.ad.ut2.App.main(App.java:29)
+2024-11-08 12:22:32 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 12:22:32 [main] INFO  c.ggm.ad.ut2.service.ProductService - Attempting to subtract 5 from stock of product with ID: 1
+2024-11-08 12:22:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 12:22:33 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 12:22:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 12:22:33 [main] INFO  c.ggm.ad.ut2.service.ProductService - Stock successfully subtracted. New stock for product ID 1: 5
+2024-11-08 12:22:53 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 12:22:53 [main] INFO  c.ggm.ad.ut2.service.ProductService - Attempting to subtract 5 from stock of product with ID: 2
+2024-11-08 12:22:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 12:22:53 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 12:22:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 12:22:53 [main] ERROR c.ggm.ad.ut2.service.ProductService - There has been an error while operating with the DB 
+java.sql.SQLException: Failed to update stock for product ID 2
+	at com.ggm.ad.ut2.service.ProductService.substractStock(ProductService.java:170)
+	at com.ggm.ad.ut2.App.main(App.java:31)
+2024-11-08 12:24:13 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 12:24:13 [main] INFO  c.ggm.ad.ut2.service.ProductService - Attempting to subtract 1 from stock of product with ID: 1
+2024-11-08 12:24:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 12:24:13 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 12:24:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 12:24:13 [main] INFO  c.ggm.ad.ut2.service.ProductService - Stock successfully subtracted. New stock for product ID 1: 1
+2024-11-08 13:05:49 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 13:05:49 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching all products
+2024-11-08 13:05:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 13:05:49 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 13:05:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 13:08:00 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 13:08:00 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching all products
+2024-11-08 13:08:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 13:08:00 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 13:08:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 13:08:00 [main] INFO  c.ggm.ad.ut2.service.ProductService - Products successfully fetched: 6 products found.
+2024-11-08 13:08:00 [main] INFO  c.ggm.ad.ut2.service.ProductService - [Producto{id=1, name='Guitarra Electrica', description='Guitarra Electrica Nuvea', stock=1, price=20.0, available=true, createDate=2024-10-30T10:21:31, updateDate=2024-11-07T08:59:38}, Producto{id=13, name='Guitarra Electrica', description='Guitarra Electrica Nueva', stock=5, price=20.0, available=true, createDate=2024-10-30T10:21:31, updateDate=2024-10-30T10:21:31}, Producto{id=14, name='Guitarra Acústica', description='Guitarra Acústica Clásica', stock=10, price=15.0, available=true, createDate=2024-11-01T11:00, updateDate=2024-11-01T11:00}, Producto{id=15, name='Guitarra Flamenca', description='Guitarra Flamenca Profesional', stock=8, price=30.0, available=true, createDate=2024-11-02T12:30, updateDate=2024-11-02T12:30}, Producto{id=16, name='Guitarra Les Paul', description='Guitarra Eléctrica Les Paul', stock=3, price=40.0, available=true, createDate=2024-11-03T14:15:22, updateDate=2024-11-03T14:15:22}, Producto{id=17, name='Guitarra Stratocaster', description='Guitarra Eléctrica Stratocaster', stock=6, price=35.0, available=true, createDate=2024-11-04T15:45:10, updateDate=2024-11-04T15:45:10}]
+2024-11-08 13:13:39 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 13:13:39 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching all products
+2024-11-08 13:13:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 13:13:39 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 13:13:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 13:13:39 [main] INFO  c.ggm.ad.ut2.service.ProductService - Products successfully fetched: 6 products found.
+2024-11-08 13:13:39 [main] INFO  c.ggm.ad.ut2.service.ProductService - [Producto{id=1, name='Guitarra Electrica', description='Guitarra Electrica Nuvea', stock=1, price=20.0, available=true, createDate=2024-10-30T10:21:31, updateDate=2024-11-07T08:59:38}, Producto{id=13, name='Guitarra Electrica', description='Guitarra Electrica Nueva', stock=5, price=20.0, available=true, createDate=2024-10-30T10:21:31, updateDate=2024-10-30T10:21:31}, Producto{id=14, name='Guitarra Acústica', description='Guitarra Acústica Clásica', stock=10, price=15.0, available=true, createDate=2024-11-01T11:00, updateDate=2024-11-01T11:00}, Producto{id=15, name='Guitarra Flamenca', description='Guitarra Flamenca Profesional', stock=8, price=30.0, available=true, createDate=2024-11-02T12:30, updateDate=2024-11-02T12:30}, Producto{id=16, name='Guitarra Les Paul', description='Guitarra Eléctrica Les Paul', stock=3, price=40.0, available=true, createDate=2024-11-03T14:15:22, updateDate=2024-11-03T14:15:22}, Producto{id=17, name='Guitarra Stratocaster', description='Guitarra Eléctrica Stratocaster', stock=6, price=35.0, available=true, createDate=2024-11-04T15:45:10, updateDate=2024-11-04T15:45:10}]
+2024-11-08 13:13:48 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 13:13:48 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching all products
+2024-11-08 13:13:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 13:13:48 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 13:13:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 13:13:49 [main] INFO  c.ggm.ad.ut2.service.ProductService - Products successfully fetched: 1 products found.
+2024-11-08 13:13:49 [main] INFO  c.ggm.ad.ut2.service.ProductService - [Producto{id=15, name='Guitarra Flamenca', description='Guitarra Flamenca Profesional', stock=8, price=30.0, available=true, createDate=2024-11-02T12:30, updateDate=2024-11-02T12:30}]
+2024-11-08 13:14:23 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 13:14:23 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching all products
+2024-11-08 13:14:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 13:14:24 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 13:14:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 13:14:24 [main] INFO  c.ggm.ad.ut2.service.ProductService - Products successfully fetched: 7 products found.
+2024-11-08 13:14:24 [main] INFO  c.ggm.ad.ut2.service.ProductService - [Producto{id=1, name='Guitarra Electrica', description='Guitarra Electrica Nuvea', stock=1, price=20.0, available=true, createDate=2024-10-30T10:21:31, updateDate=2024-11-07T08:59:38}, Producto{id=12, name='Batería Acústica', description='Set de batería acústica de 5 piezas', stock=3, price=499.99, available=true, createDate=2024-11-07T09:18:39, updateDate=2024-11-07T09:18:39}, Producto{id=13, name='Guitarra Electrica', description='Guitarra Electrica Nueva', stock=5, price=20.0, available=true, createDate=2024-10-30T10:21:31, updateDate=2024-10-30T10:21:31}, Producto{id=14, name='Guitarra Acústica', description='Guitarra Acústica Clásica', stock=10, price=15.0, available=true, createDate=2024-11-01T11:00, updateDate=2024-11-01T11:00}, Producto{id=15, name='Guitarra Flamenca', description='Guitarra Flamenca Profesional', stock=8, price=30.0, available=true, createDate=2024-11-02T12:30, updateDate=2024-11-02T12:30}, Producto{id=16, name='Guitarra Les Paul', description='Guitarra Eléctrica Les Paul', stock=3, price=40.0, available=true, createDate=2024-11-03T14:15:22, updateDate=2024-11-03T14:15:22}, Producto{id=17, name='Guitarra Stratocaster', description='Guitarra Eléctrica Stratocaster', stock=6, price=35.0, available=true, createDate=2024-11-04T15:45:10, updateDate=2024-11-04T15:45:10}]
+2024-11-08 13:14:29 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 13:14:29 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching all products
+2024-11-08 13:14:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 13:14:29 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 13:14:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 13:14:30 [main] INFO  c.ggm.ad.ut2.service.ProductService - Products successfully fetched: 6 products found.
+2024-11-08 13:14:30 [main] INFO  c.ggm.ad.ut2.service.ProductService - [Producto{id=1, name='Guitarra Electrica', description='Guitarra Electrica Nuvea', stock=1, price=20.0, available=true, createDate=2024-10-30T10:21:31, updateDate=2024-11-07T08:59:38}, Producto{id=12, name='Batería Acústica', description='Set de batería acústica de 5 piezas', stock=3, price=499.99, available=true, createDate=2024-11-07T09:18:39, updateDate=2024-11-07T09:18:39}, Producto{id=13, name='Guitarra Electrica', description='Guitarra Electrica Nueva', stock=5, price=20.0, available=true, createDate=2024-10-30T10:21:31, updateDate=2024-10-30T10:21:31}, Producto{id=14, name='Guitarra Acústica', description='Guitarra Acústica Clásica', stock=10, price=15.0, available=true, createDate=2024-11-01T11:00, updateDate=2024-11-01T11:00}, Producto{id=15, name='Guitarra Flamenca', description='Guitarra Flamenca Profesional', stock=8, price=30.0, available=true, createDate=2024-11-02T12:30, updateDate=2024-11-02T12:30}, Producto{id=17, name='Guitarra Stratocaster', description='Guitarra Eléctrica Stratocaster', stock=6, price=35.0, available=true, createDate=2024-11-04T15:45:10, updateDate=2024-11-04T15:45:10}]
+2024-11-08 13:15:46 [main] INFO  com.ggm.ad.ut2.App - Iniciando programa
+2024-11-08 13:15:46 [main] INFO  c.ggm.ad.ut2.service.ProductService - Fetching all products
+2024-11-08 13:15:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-08 13:15:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f736069
+2024-11-08 13:15:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-08 13:15:46 [main] ERROR c.ggm.ad.ut2.service.ProductService - There has been an error while operating with the DB 
+java.sql.SQLException: No Products were find with the name =
+	at com.ggm.ad.ut2.service.ProductService.getAllByNameAlike(ProductService.java:199)
+	at com.ggm.ad.ut2.App.main(App.java:32)
