@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductDaoJdbc implements IProductDao {
-    private static final Logger logger = LoggerFactory.getLogger(ProductDaoJdbc.class);
+
     private Connection conn;
 
     public ProductDaoJdbc(Connection conn) {
